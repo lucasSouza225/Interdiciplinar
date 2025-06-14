@@ -1,0 +1,142 @@
+:root {
+    --cor01: #191919;
+    --cor02: #2B2B2B;
+    --cor03: #FFFFFF;
+    --cor04: #CC4F3D;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    border-style: 0;
+    background-color: var(--cor01);
+    color: var(--cor03);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--cor03);
+    padding: 15px 20px;
+    position: relative;
+}
+
+.logo img {
+    width: 200px;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: var(--cor03);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 40px;
+    background-color: var(--cor02);
+    border-radius: 50px;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    background-color: var(--cor04);
+    color: var(--cor01);
+}
+
+.btns_pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pesquisa button {
+    display: none;
+}
+
+.pesquisa input {
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: 3px solid var(--cor04);
+    background-color: var(--cor02);
+    color: var(--cor03);
+}
+
+.login-btn {
+    background-color: var(--cor04);
+    color: var(--cor03);
+    padding: 10px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--cor03);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+    .logo img {
+        width: 100px;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: var(--cor01);
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        z-index: 1;
+    }
+
+    nav.active {
+        display: flex ;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .pesquisa input {
+        width: 100px;
+        display: none;
+    }
+
+    .pesquisa button {
+        display: block;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: var(--cor02);
+        border: 3px solid var(--cor04);
+        color: var(--cor03);
+    }
+
+    .login-btn {
+        padding: 8px 12px;
+    }
+}
+
+
+/* banner */
+
