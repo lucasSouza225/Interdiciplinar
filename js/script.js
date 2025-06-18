@@ -1,21 +1,19 @@
-// funçao responsável por tornar o menu responsivo 
-function btnResponsivo() {
-  // obtém o botão do menu pelo id menuBtn
-  let menuBtn = document.getElementById('menuBtn');
-  // obtém o menu que será exibido ou ocultado no modo mobile
-  let mobileMenu = document.getElementById('mobileMenu');
-  // Verifica se os dois elementos existem na página
-  if (menuBtn && mobileMenu) {
-    // Adiciona um ouvinte de evento de clique no botão do menu
-    menuBtn.addEventListener('click', () => {
-        
-      // alterna a classe 'active' no menu mobile
+let index = 0;
+let slides = document.querySelectorAll(".slide");
 
-      mobileMenu.classList.toggle('active');
-    });
-          // 'active' isso serve para mostrar ou esconder o menu, dependendo do CSS associado à classe 
-  }
+function showSlide(i) {
+  slides.forEach((slide, idx) => {
+    slide.classList.remove("active");
+    if (idx === i) slide.classList.add("active");
+  });
 }
 
-// Executa a função btnResponsivo assim que o conteúdo da página for carregado
-document.addEventListener('DOMContentLoaded', btnResponsivo);
+setInterval(() => {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}, 4000);
+
+document.getElementById("menuBtn").addEventListener("click", () => {
+  let menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("active");
+});
