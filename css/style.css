@@ -90,7 +90,8 @@ nav a:hover {
 .banner_rotativo {
   position: relative;
   overflow: hidden;
-  height: 450px;
+  height: 450
+  px;
   margin-top: 10px;
 }
 
@@ -237,8 +238,8 @@ footer a {
     flex-direction: column;
     background: var(--cor02);
     position: absolute;
-    top: 90px;
-    right: 10px;
+    top: 100px;
+    right: 35px;
     width: 200px;
     padding: 10px;
     z-index: 1000;
