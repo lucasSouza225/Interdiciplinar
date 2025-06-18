@@ -87,10 +87,10 @@ nav a:hover {
   cursor: pointer;
 }
 
-.banner-rotativo {
+.banner_rotativo {
   position: relative;
   overflow: hidden;
-  min-height: 450px;
+  height: 450px;
   margin-top: 10px;
 }
 
@@ -205,25 +205,26 @@ footer a {
 }
 
 @media (max-width: 1060px) {
-  header {
-    flex-direction: column;
-  }
   .logo img {
     width: 350px;
     margin: 30px 0;
   }
+
+  .btn_login {
+    margin: 20px 0;
+  }
+
 }
 
 @media (max-width: 768px) {
 .logo {
   display: flex;
   justify-content: space-around;
-  margin: 30px 0;
+  margin: 10px 0;
 }
 
   .logo img {
     width: 175px;
-
   }
 
   .btn_login input {
@@ -255,6 +256,10 @@ footer a {
     width: 100%;
     justify-content: center;
     margin-top: 10px;
+  }
+
+  .banner_rotativo {
+    height: 200px;
   }
 
 
