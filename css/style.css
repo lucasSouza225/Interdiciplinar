@@ -90,8 +90,7 @@ nav a:hover {
 .banner_rotativo {
   position: relative;
   overflow: hidden;
-  height: 450
-  px;
+  height: 450px;
   margin-top: 10px;
 }
 
@@ -203,6 +202,13 @@ footer a {
 .social a svg {
   margin: 0 20px;
   font-size: 50px;
+}
+
+#mudarPagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--cor04);
 }
 
 @media (max-width: 1060px) {
