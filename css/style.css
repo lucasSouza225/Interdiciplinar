@@ -87,6 +87,10 @@ nav a:hover {
   cursor: pointer;
 }
 
+#menuBtn:hover {
+    font-weight: bold;
+}
+
 .banner_rotativo {
   position: relative;
   overflow: hidden;

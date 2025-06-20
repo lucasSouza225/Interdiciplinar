@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GeekPoint</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+
     <link rel="shortcut icon" href="Imagens/favoicon/favoicon.png" type="image/x-icon">
 
 </head>
@@ -27,8 +29,8 @@
 
         <nav id="mobileMenu">
             <a href="filme.html">FILMS</a>
-            <a href="#" style="background-color:#CC4F3D;">SERIES</a>
-            <a href="noticia.html">NEWS</a>
+            <a href="serie.html">SERIES</a>
+            <a href="#" style="background-color:#CC4F3D;">NEWS</a>
         </nav>
         <div class="btn_login">
             <input type="text" placeholder="Pesquisar..." />
@@ -36,77 +38,50 @@
         </div>
     </header>
     <main>
-        <section class="mais-vistos">
-            <img src="Imagens/tiulos/series.png" alt="">
-            <div class="filmes">
-                <div class="filme">
-                    <img src="imagens/series/1.jpg" alt="serie">
-                    <button>Assistir</button>
-                </div>
-                <div class="filme">
-                    <img src="imagens/series/2.jpg" alt="serie">
-                    <button>Assistir</button>
-                </div>
-                <div class="filme">
-                    <img src="imagens/series/3.jpg" alt="serie">
-                    <button>Assistir</button>
-                </div>
-                <div class="filme">
-                    <img src="imagens/series/4.jpg" alt="serie">
-                    <button>Assistir</button>
-                </div>
-                <div class="filme">
-                    <img src="imagens/series/5.jpg" alt="serie">
-                    <button>Assistir</button>
-                </div>
-                <div class="filme">
-                    <img src="imagens/series/6.jpg" alt="serie">
-                    <button>Assistir</button>
-                </div>
-                <div class="filme">
-                    <img src="imagens/series/7.jpg" alt="serie">
-                    <button>Assistir</button>
-                </div>
-                <div class="filme">
-                    <img src="imagens/series/8.jpg" alt="serie">
-                    <button>Assistir</button>
-                </div>
-                <div class="filme">
-                    <img src="imagens/series/9.jpg" alt="serie">
-                    <button>Assistir</button>
-                </div>
-                <div class="filme">
-                    <img src="imagens/series/10.jpg" alt="serie">
-                    <button>Assistir</button>
-                </div>
-                <div class="filme">
-                    <img src="imagens/series/11.jpg" alt="serie">
-                    <button>Assistir</button>
-                </div>
-                <div class="filme">
-                    <img src="imagens/series/12.jpg" alt="serie">
-                    <button>Assistir</button>
-                </div>
-                <div class="filme">
-                    <img src="imagens/series/13.jpg" alt="serie">
-                    <button>Assistir</button>
-                </div>
-                <div class="filme">
-                    <img src="imagens/series/14.jpg" alt="serie">
-                    <button>Assistir</button>
-                </div>
-                <div class="filme">
-                    <img src="imagens/series/15.jpg" alt="serie">
-                    <button>Assistir</button>
-                </div>
-            </div>
-            </div>
-        </section>
-        <div id="mudarPagina">
-            <p>
-                < <a href="#"> 2</a>, <a href="#"> 3</a>, <a href="#"> 4</a>, <a href="#"> 5</a> ....>
-            </p>
+        <div class="titulo">
+            <img src="Imagens/tiulos/Login.png" alt="Titulo">
         </div>
+
+        <form action="#" id="frm_login">
+            <div>
+                <p>User <span>*</span></p>
+                <input type="email" name="Usuario" id="idUsuario" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <p>Password <span>*</span></p>
+                <input type="password" name="Senha" id="idSenha" placeholder="Enter your password" required>
+            </div>
+            <div id="div_esqueceuSenha">
+                <input type="button" value="Between" id="btn_lgn">
+                <a href="#">FORGOT YOUR PASSWORD?</a>
+            </div>
+        </form>
+        <section>
+            <h2>
+                Not registered yet?
+            </h2>
+            <h3>
+                There are many advantages to being a registered <strong>GEEKPOINT</strong> user!
+            </h3>
+            <ul>
+                <li>Have your history of watched/rated movies stored and help choose the best movies in our Tops.</li>
+
+                <li>Submit your comments for any of the movies and show your opinion to the world.</li>
+
+                <li>Keep a contact list of people you are interested in, follow what they are watching, giving their
+                    opinions and much more.</li>
+
+                <li>Create lists of movies and people, any way you want.</li>
+
+                <li>Participate in promotions.</li>
+            </ul>
+            <p>What are you waiting for?!</p>
+            <p>Register now!</p>
+        </section>
+        <div class="bnt">
+            <button class="btn_cadastro">Sign up</button>
+        </div>
+
     </main>
     <hr>
     <footer>
