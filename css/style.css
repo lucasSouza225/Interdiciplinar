@@ -253,6 +253,10 @@ footer a {
     width: 80%;
   }
 
+  .filme {
+    width: 700px;
+  }
+
   nav {
     text-align: center;
     display: none;
